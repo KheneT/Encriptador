@@ -1,0 +1,367 @@
+body {
+
+    background-color: #E9ECF8;
+
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+
+
+
+}
+
+
+#logoImg {
+    margin-top: 2em;
+}
+
+html,
+body,
+main {
+    height: 100%;
+
+}
+
+main {
+    height: 90%;
+    position: relative;
+    top: 5%;
+}
+
+#texto {
+    background-color: transparent;
+    border: none;
+    font-style: inherit;
+    font-size: 2em;
+    font-weight: 400;
+    color: #0A3871;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    outline: none;
+    overflow: hidden;
+    width: 47%;
+    height: 40%;
+
+}
+
+#result {
+    background-color: transparent;
+    top: 4%;
+    left: 6.5%;
+    font-style: inherit;
+    font-size: 2em;
+    font-weight: 400;
+    color: #0A3871;
+    position: absolute;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    width: 85%;
+    height: 75%;
+
+
+}
+
+
+#texto::placeholder {
+    color: #0A3871;
+}
+
+.resultado {
+    position: absolute;
+    right: 6%;
+    top: 2%;
+    width: 25%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, .2);
+    border: none;
+    display: inline-block;
+
+
+
+
+}
+
+#imgResultado {
+    width: 70%;
+    height: 60%;
+
+    position: absolute;
+    top: 13%;
+    right: 13%;
+
+
+}
+
+.foot {
+    position: absolute;
+    bottom: 10%;
+    width: 40%;
+    border: none;
+    text-align: center;
+    left: 15%;
+
+
+}
+
+.foot p {
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: .85em;
+    margin-right: 45%;
+}
+
+.botones {
+    padding: 2.5% 15%;
+    margin-left: 2%;
+    border-radius: 15px;
+    border: none;
+
+    font-style: inherit;
+}
+
+#Encriptar {
+    background-color: #0A3871;
+    color: rgba(255, 255, 255, .7);
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #D8DFE8;
+
+
+}
+
+#Desencriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+
+}
+
+#copiar {
+    position: absolute;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    bottom: 3%;
+    left: 7%;
+    right: 7%;
+    padding: 5% 30%;
+
+}
+
+
+
+#copiar:hover {
+
+    border: 1px solid darkorange;
+    color: darkgoldenrod;
+    transition: .5s all;
+
+}
+
+@media screen and (min-width:768px) and (min-height:1174px) {
+
+   
+    main {
+        
+        position: relative;
+    }
+
+    #copiar:hover {
+
+        border: 1px solid darkgreen;
+        color: darkgreen;
+        transition: .5s all;
+    
+    }
+    #imgResultado{
+
+        display: none;
+        
+    }
+
+    #txtResponsive::before{
+        font-size: 1.8em;
+        font-weight: bolder;
+        font-family: 'Inter', sans-serif;
+        color: black;
+        position: absolute;
+        width: 70%;
+        left: 18%;
+        right: 18%;
+        top: 30%;
+        content: "Ningún mensaje fue encontrado";
+    }
+
+    #subTexto::before{
+        font-size: 1em;
+        font-family: 'Inter', sans-serif;
+        position: absolute;
+        width: 65%;
+        left: 20%;
+        right: 20%;
+        top: 42%;
+        content: "Ingresa el texto que desees encriptar o desencriptar";
+
+
+    }
+
+    .resultado{
+       border: none;
+        height: 30%;
+        width: 85%;
+        top: 70%;
+        box-shadow: none;
+        
+    }
+
+    #copiar{
+        
+       
+        padding: 1% 30%;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+    .foot{
+        width: 90%;
+        left: 0;
+        left: 4%;
+        right: 4%;
+        bottom: 38%;
+    }
+
+    #texto{
+        width: 80%;
+        top: 10%;
+    }
+    #Encriptar{
+        width: 45%;
+    }
+    #Desencriptar{
+        width: 45%;
+    }
+
+  
+}
+
+@media screen and (min-width: 410px) and (min-height: 890px) and (max-width:768px) {
+
+    main{
+        top: 2%;
+        height: 95%;
+    }
+
+    #copiar:hover {
+
+        border: 1px solid darkgreen;
+        color: darkgreen;
+        transition: .5s all;
+    
+    }
+    .resultado{
+        height: 10%;
+        top: 77%;
+        width: 88%;
+        height: 20%;
+        box-shadow: none;
+        box-shadow: 0 1px 5px 1px rgba(0, 0, 0,.2);
+    }
+    
+    #texto{
+        width: 88%;
+        top: 12%;
+        left: 5%;
+        
+    }
+
+    #imgResultado{
+
+        display: none;
+        
+    }
+
+    .foot{
+        width:  90%;
+        left: 5%;
+        right: 17%;
+        height: 18%;
+        bottom: 27%;
+    }
+
+    .foot p {
+        width: 65%;
+        margin-bottom: 2%;
+        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+        font-size: .7em;
+
+        
+    }
+
+    #Encriptar{
+        margin-bottom: 5%;
+        padding: 5% 40%;
+        display: block;
+        border-radius: 20px;
+
+    }
+
+    #Desencriptar{
+        border-radius: 20px;
+
+        padding: 5% 36%;
+        display: block;
+        background: transparent;
+    }
+
+    #txtResponsive::before{
+        font-size: 1.3em;
+        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+        color: black;
+        position: absolute;
+        width: 70%;
+        left: 18%;
+        right: 18%;
+        top: 30%;
+        content: "Ningún mensaje fue encontrado";
+        text-align: center;
+    }
+
+    #subTexto::before{
+        font-size: .8em;
+        font-family: 'Inter', sans-serif;
+        position: absolute;
+        width: 65%;
+        left: 18%;
+        right: 20%;
+        top: 60%;
+        text-align: center;
+        content: "Ingresa el texto que desees encriptar o desencriptar";
+
+
+    }
+
+    #copiar{
+        
+       
+        padding: 1% 30%;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="challenge.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="Challenge.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+        <img src="ChallengeIMG/Logo.png" alt="Logo" id="logoImg">
+
+        <textarea name="" placeholder="Ingrese el texto aquí..." id="texto" cols="35" rows="11"></textarea>
+        
+
+        <section class="resultado">
+            <img src="ChallengeIMG/resultadoImg.png" alt="resultado" id="imgResultado">
+            <p id="txtResponsive"></p>
+            <p id="subTexto"></p>
+    
+             <input type="button" value="Copiar" class="botones" onclick="copiar()" id="copiar" style=" visibility: hidden; ">
+            <textarea  id="result"  readonly></textarea>
+
+
+        </section>
+        <section class="foot">
+            <p>⚠Solo letras minúsculas y sin acentos</p>
+            <input type="button" value="Encriptar" class="botones" id="Encriptar" onclick="encriptar()">
+            <input type="button" value="Desencriptar" class="botones" id="Desencriptar" onclick="desencriptar()">
+
+        </section>
+    </main>
+
+
+</body>
+</html>
