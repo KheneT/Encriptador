@@ -109,6 +109,11 @@ main {
 
 }
 
+footer{
+    text-align: center;
+    color: lightgray;
+}
+
 .foot p {
     margin-bottom: 1em;
     font-weight: bold;
@@ -195,7 +200,7 @@ main {
         font-family: 'Inter', sans-serif;
         color: black;
         position: absolute;
-        width: 70%;
+        width: 75%;
         left: 18%;
         right: 18%;
         top: 30%;
@@ -242,6 +247,15 @@ main {
         bottom: 38%;
     }
 
+    footer{
+
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        
+        
+    }
     #texto{
         width: 80%;
         top: 10%;
@@ -261,6 +275,8 @@ main {
     main{
         top: 2%;
         height: 95%;
+       
+  
     }
 
     #copiar:hover {
@@ -272,7 +288,7 @@ main {
     }
     .resultado{
         height: 10%;
-        top: 77%;
+        top: 75%;
         width: 88%;
         height: 20%;
         box-shadow: none;
@@ -298,6 +314,17 @@ main {
         right: 17%;
         height: 18%;
         bottom: 27%;
+    }
+    
+    footer{
+        position: absolute;
+        padding: 0;
+        bottom:1%;
+        left: 0;
+        
+        width: 100%;
+        
+        
     }
 
     .foot p {
